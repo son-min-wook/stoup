@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BOARD SYSTEM "bulletin.dtd">
+<BOARD>
+<NAME>breaking news</NAME>
+  <ARTICLE>
+      <TITLE>Soccer</TITLE>
+	  <MESSAGE>Korea win</MESSAGE>
+	  <WRITERID>201433688</WRITERID>
+	  <WRITERNAME>sonminwook</WRITERNAME>
+	  <REPLY>
+	     <MESSAGE>good</MESSAGE>
+		 <WRITERID>1234</WRITERID>
+		 <WRITERNAME>no one</WRITERNAME>
+	  </REPLY>
+  </ARTICLE>
+  <ARTICLE>
+      <TITLE>Baseball</TITLE>
+	  <MESSAGE>Korea lose</MESSAGE>
+	  <WRITERID>201433688</WRITERID>
+	  <WRITERNAME>sonminwook</WRITERNAME>
+	  <REPLY>
+	     <MESSAGE>sign....</MESSAGE>
+		 <WRITERID>4321</WRITERID>
+		 <WRITERNAME>any one</WRITERNAME>
+	  </REPLY>
+  </ARTICLE>
+</BOARD>
