@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="stringtype">
+<xs:restriction base="xs:string"/>
+</xs:simpleType>
+
+<xs:complexType name="newspapertype">
+<xs:sequence>
+<xs:element name="article" type="articletype" minOccurs="1" maxOccurs="unbounded"/>
+<xs:element name="newspapers" type="stringtype" fixed="Vervet Logic Times"/>
+<xs:element name="publisher" type="stringtype" fixed="Vervet Logic Press"/>
+<xs:element name="copyright" type="stringtype" fixed="Copyright 1998 Vervet Logic Press"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="articletype">
+<xs:sequence>
+<xs:element name="headline" type="stringtype"/>
+<xs:element name="byline" type="stringtype"/>
+<xs:element name="lead" type="stringtype"/>
+<xs:element name="body" type="stringtype"/>
+<xs:element name="notes" type="stringtype"/>
+</xs:sequence>
+<xs:attribute name="author" type="stringtype" use="required"/>
+<xs:attribute name="editor" type="stringtype" use="optional"/>
+<xs:attribute name="date" type="stringtype" use="optional"/>
+<xs:attribute name="edition" type="stringtype" use="optional"/>
+</xs:complexType>
+
+<xs:element name="newspaper" type="newspapertype"/>
+</xs:schema>
+
+
